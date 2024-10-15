@@ -1,8 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import AppName from "./components/AppName";
 function App() {
   return (
     <center>
-      <h1>to do APP</h1>
+      <AppName></AppName>
       <div class="container text-center">
         <div class="row">
           <div class="col-sm-4">
