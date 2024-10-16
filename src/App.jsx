@@ -9,8 +9,7 @@ function App() {
       <center>
         <AppName></AppName>
         <Entry></Entry>
-        <Items work={"buy milk"} date={"15/10/2024"}></Items>
-        <Items work={"go to college"} date={"15/10/2024"}></Items>
+        <Items></Items>
       </center>
     </Container>
   );
