@@ -1,6 +1,7 @@
+import "./App.css";
 function Entry() {
   return (
-    <div class="container text-center">
+    <div class="container text-center meoww">
       <div class="row">
         <div class="col-sm-4">
           <input type="text" />
