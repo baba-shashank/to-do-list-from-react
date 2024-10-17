@@ -9,6 +9,10 @@ function Items() {
       work: "Go to college",
       date: "15/10/2024",
     },
+    {
+      work: "Study react",
+      date: "15/10/2024",
+    },
   ];
   return (
     <div class="container text-center">
