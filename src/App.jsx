@@ -20,16 +20,23 @@ function App() {
   };
   const [Arr, setArr] = useState(arr);
   let onclick = () => {
-    let newItems = [
-      ...Arr,
-      {
-        work: Input,
-        date: Datee,
-      },
-    ];
-    setArr(newItems);
+    if (Input != "" && Datee != "") {
+      let newItems = [
+        ...Arr,
+        {
+          work: Input,
+          date: Datee,
+        },
+      ];
+      setArr(newItems);
+    }
   };
 
+  let onclickdel = (event) => {
+    Arr.splice(event.target.accessKey - 1, 1);
+    let neww = [...Arr];
+    setArr(neww);
+  };
   return (
     <Container>
       <center>
@@ -39,7 +46,7 @@ function App() {
           onchange={onchange}
           onclick={onclick}
         ></Entry>
-        <Items xrr={Arr}></Items>
+        <Items xrr={Arr} onclickdel={onclickdel}></Items>
       </center>
     </Container>
   );

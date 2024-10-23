@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState } from "react";
-function Items({ xrr }) {
+function Items({ xrr, onclickdel }) {
+  let c = 0;
   return (
     <div class="container text-center">
       {xrr.map((obj) => (
@@ -8,7 +9,12 @@ function Items({ xrr }) {
           <div class="col-sm-4">{obj.work}</div>
           <div class="col-sm-4">{obj.date}</div>
           <div class="col-sm-2">
-            <button type="button" class="btn btn-danger ">
+            <button
+              type="button"
+              class="btn btn-danger"
+              accessKey={(c = c + 1)}
+              onClick={onclickdel}
+            >
               delete
             </button>
           </div>
