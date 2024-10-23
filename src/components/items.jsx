@@ -1,27 +1,14 @@
 import "./App.css";
-function Items() {
-  let arr = [
-    {
-      work: "buy milk",
-      date: "15/10/2024",
-    },
-    {
-      work: "Go to college",
-      date: "15/10/2024",
-    },
-    {
-      work: "Study react",
-      date: "15/10/2024",
-    },
-  ];
+import { useState } from "react";
+function Items({ xrr }) {
   return (
     <div class="container text-center">
-      {arr.map((obj) => (
-        <div class="row  meoww">
+      {xrr.map((obj) => (
+        <div class="row meoww " key={Math.random()}>
           <div class="col-sm-4">{obj.work}</div>
           <div class="col-sm-4">{obj.date}</div>
           <div class="col-sm-2">
-            <button type="button" class="btn btn-danger">
+            <button type="button" class="btn btn-danger ">
               delete
             </button>
           </div>
